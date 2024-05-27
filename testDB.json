@@ -1,0 +1,58 @@
+{
+    "laptops": [
+        {
+          "id": "1",
+          "brand": "Dell",
+          "image": "https://sm.pcmag.com/t/pcmag_uk/review/d/dell-latit/dell-latitude-3390_52yk.1920.png",
+          "img1": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/latitude-notebooks/14-5400/media-gallery/laptop_latitude_14_5400_gallery_3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=645&qlt=100,1&resMode=sharp2&size=645,402&chrss=full",
+          "img2": "https://www.zap.md/sites/default/files/imagecache/product-large/dell-latitude-5400-2.png",
+          "name": "Laptop Dell Latitude 5400",
+          "information": "Dell Latitude 5400 (Core i5-8365U, 16GB, 256GB, VGA Intel UHD Graphics 620, 14.0 inch FHD)",
+          "CPU": "Core i5-8365U",
+          "RAM": "16GB",
+          "Disk": "256GB",
+          "Card": "VGA Intel UHD Graphics 620",
+          "Screen": "14.0 inch FHD",
+          "sale": "25",
+          "priceOld": "16600000",
+          "priceNew": "11700000",
+          "quantity": "150"
+        },
+        {
+          "id": "2",
+          "brand": "Alienware",
+          "image": "https://cdn.store-assets.com/s/752630/i/57205857.png?width=1024",
+          "img1": "https://th.bing.com/th/id/OIP.EDcDGO3RIgPuEVJAeocnpAHaFj?rs=1&pid=ImgDetMain",
+          "img2": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Alienware_m16_header.png",
+          "name": "Alienware m18 Gaming Laptop",
+          "information": "Alienware m18 (Intel Core i9-13900HX, 32GB, 1TB, NVIDIA GeForce RTX 4090, 18 inch QHD+)",
+          "CPU": "Core i9-13900HX",
+          "RAM": "32GB",
+          "Disk": "1TB",
+          "Card": "NVIDIA GeForce RTX 4090",
+          "Screen": "18 inch QHD+",
+          "sale": "20",
+          "priceOld": "18700000",
+          "priceNew": "14960000",
+          "quantity": "150"
+        },
+        {
+          "id": "3",
+          "brand": "Lenovo",
+          "image": "https://th.bing.com/th/id/OIP.RQ0eo82mz_N8zJbgh4bOOAHaF8?rs=1&pid=ImgDetMain",
+          "img1": "https://www.lenovo.com/medias/lenovo-laptops-thinkbook-14-gen-4-plus-14-intel-hero.png?context=bWFzdGVyfHJvb3R8MzEyMzkzfGltYWdlL3BuZ3xoYjgvaDIzLzEzMjU1MTA3NzcyNDQ2LnBuZ3w3MjljOTZmMmJjY2JmNWRiNzMwN2FhOWM2MDFlMDU1Y2JlYTVkYjE3MjdjMjA2ZDNkZjIwYmJiODNmYzk5Njdi",
+          "img2": "https://www.lenovo.com/medias/ThinkBook-14.png?context=bWFzdGVyfHJvb3R8NjYzNzh8aW1hZ2UvcG5nfGhiZC9oZTIvMTExMzk4OTIyNDg2MDYucG5nfDkxNGE5Y2VhZDc2MDUyOWIxODA0NDdlMDEwMGVlYTI3ZGFkYjQ5NzE5OWZhOTFhMWJmMTJmOTRiZWY3NTA0ZTk",
+          "name": "Lenovo ThinkBook 14 Gen 4",
+          "information": "Lenovo ThinkBook 14 Gen 4 (Intel Core i5-1235U, 8GB, 256GB, Intel UHD Graphics, 14 inch FHD)",
+          "CPU": "Core i5-1235U",
+          "RAM": "8GB",
+          "Disk": "256GB",
+          "Card": "Intel UHD Graphics",
+          "Screen": "14 inch FHD",
+          "sale": "15",
+          "priceOld": "10500000",
+          "priceNew": "8925000",
+          "quantity": "150"
+        }
+      ]
+}

@@ -1,0 +1,596 @@
+{
+  "roles": [
+    {
+      "id": "1",
+      "roleName": "Admin"
+    },
+    {
+      "id": "2",
+      "roleName": "User"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "1",
+      "username": "Nguyenmanh2707",
+      "password": "123456",
+      "role": "1"
+    },
+    {
+      "id": "2",
+      "username": "Ninh123",
+      "password": "123456",
+      "role": "2"
+    },
+    {
+      "id": "3",
+      "username": "Giang123",
+      "password": "123456",
+      "role": "1"
+    },
+    {
+      "id": "4",
+      "username": "Khai123",
+      "password": "123456",
+      "role": "2"
+    },
+    {
+      "id": "5",
+      "username": "Duyen123",
+      "password": "123456",
+      "role": "2"
+    },
+    {
+      "id": "7",
+      "username": "Nguyenmanh270704",
+      "password": "123456",
+      "role": "2"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Nguyễn Ngọc Mạnhh",
+      "gender": "Male",
+      "age": "10",
+      "email": "nguyenmanh@gmail.com",
+      "address": "Vĩnh Phúc",
+      "phoneNumber": "0387172022",
+      "account": "1"
+    },
+    {
+      "id": "2",
+      "name": "Hồ Chí Nhật Ninh",
+      "gender": "Male",
+      "age": "20",
+      "email": "ninhhcn@gmail.vn",
+      "address": "Nghệ An",
+      "phoneNumber": "0987637845",
+      "account": "2"
+    },
+    {
+      "id": "3",
+      "name": "Nguyễn Thị Hương Giang",
+      "gender": "Female",
+      "age": "19",
+      "email": "giangnth@gmail.com",
+      "address": "Hòa Bình",
+      "phoneNumber": "0982735521",
+      "account": "3"
+    },
+    {
+      "id": "4",
+      "name": "Lương Duy Khải",
+      "gender": "Male",
+      "age": "20",
+      "email": "khaild@gmail.com",
+      "address": "Nam Định",
+      "phoneNumber": "0927634735",
+      "account": "4"
+    },
+    {
+      "id": "5",
+      "name": "Trần Thị Mỹ Duyên",
+      "gender": "Female",
+      "age": "19",
+      "email": "duyenttm@gmail.com",
+      "address": "Phú Thọ",
+      "phoneNumber": "0376562349",
+      "account": "5"
+    },
+    {
+      "id": "7",
+      "name": "Nguyễn Ngọc Mạnh",
+      "age": "18",
+      "address": "Lập Thạch",
+      "gender": "Male",
+      "email": "InformationTechnologyFpoly@gmail.com",
+      "phoneNumber": "0987807660",
+      "account": "7"
+    }
+  ],
+  "brands": [
+    {
+      "id": "1",
+      "brandName": "Dell"
+    },
+    {
+      "id": "2",
+      "brandName": "HP"
+    },
+    {
+      "id": "3",
+      "brandName": "Lenovo"
+    },
+    {
+      "id": "4",
+      "brandName": "Asus"
+    },
+    {
+      "id": "5",
+      "brandName": "Acer"
+    }
+  ],
+  "series": [
+    {
+      "id": "1",
+      "idBrand": "1",
+      "seriesName": "Inspiron"
+    },
+    {
+      "id": "2",
+      "idBrand": "1",
+      "seriesName": "XPS"
+    },
+    {
+      "id": "3",
+      "idBrand": "1",
+      "seriesName": "Vostro"
+    },
+    {
+      "id": "4",
+      "idBrand": "1",
+      "seriesName": "Latitude"
+    },
+    {
+      "id": "5",
+      "idBrand": "1",
+      "seriesName": "Precision"
+    },
+    {
+      "id": "6",
+      "idBrand": "1",
+      "seriesName": "Alienware"
+    },
+    {
+      "id": "7",
+      "idBrand": "2",
+      "seriesName": "Probook"
+    },
+    {
+      "id": "8",
+      "idBrand": "2",
+      "seriesName": "EliteBook"
+    },
+    {
+      "id": "9",
+      "idBrand": "2",
+      "seriesName": "Envy"
+    },
+    {
+      "id": "10",
+      "idBrand": "2",
+      "seriesName": "Pavilion"
+    },
+    {
+      "id": "11",
+      "idBrand": "2",
+      "seriesName": "Zbook"
+    },
+    {
+      "id": "12",
+      "idBrand": "2",
+      "seriesName": "Notebook"
+    },
+    {
+      "id": "13",
+      "idBrand": "2",
+      "seriesName": "Chromebooks"
+    },
+    {
+      "id": "14",
+      "idBrand": "2",
+      "seriesName": "Spectre"
+    },
+    {
+      "id": "15",
+      "idBrand": "3",
+      "seriesName": "ThinkPad"
+    },
+    {
+      "id": "16",
+      "idBrand": "3",
+      "seriesName": "ThinkBook"
+    },
+    {
+      "id": "17",
+      "idBrand": "3",
+      "seriesName": "IdeaPad"
+    },
+    {
+      "id": "18",
+      "idBrand": "3",
+      "seriesName": "Yoga"
+    },
+    {
+      "id": "19",
+      "idBrand": "3",
+      "seriesName": "Legion"
+    },
+    {
+      "id": "20",
+      "idBrand": "3",
+      "seriesName": "ChromeBook"
+    },
+    {
+      "id": "21",
+      "idBrand": "4",
+      "seriesName": "Zenbook"
+    },
+    {
+      "id": "22",
+      "idBrand": "4",
+      "seriesName": "TUF Gaming"
+    },
+    {
+      "id": "23",
+      "idBrand": "4",
+      "seriesName": "VivoBook"
+    },
+    {
+      "id": "24",
+      "idBrand": "4",
+      "seriesName": "ROG"
+    },
+    {
+      "id": "25",
+      "idBrand": "4",
+      "seriesName": "TUG"
+    },
+    {
+      "id": "26",
+      "idBrand": "5",
+      "seriesName": "ChromeBook"
+    },
+    {
+      "id": "27",
+      "idBrand": "5",
+      "seriesName": "Aspire"
+    },
+    {
+      "id": "28",
+      "idBrand": "5",
+      "seriesName": "Predator"
+    },
+    {
+      "id": "29",
+      "idBrand": "5",
+      "seriesName": "Travel Mate"
+    },
+    {
+      "id": "30",
+      "idBrand": "5",
+      "seriesName": "Switch"
+    },
+    {
+      "id": "31",
+      "idBrand": "5",
+      "seriesName": "Nitro"
+    }
+  ],
+  "operatingSystems": [
+    {
+      "id": "1",
+      "os": "Windows 10 Home - 32 bit"
+    },
+    {
+      "id": "2",
+      "os": "Windows 10 Pro - 32 bit"
+    },
+    {
+      "id": "3",
+      "os": "Windows 10 Home - 64 bit"
+    },
+    {
+      "id": "4",
+      "os": "Windows 10 Pro - 64 bit"
+    },
+    {
+      "id": "5",
+      "os": "Windows 11 Home - 32 bit"
+    },
+    {
+      "id": "6",
+      "os": "Windows 11 Pro - 32 bit"
+    },
+    {
+      "id": "7",
+      "os": "Windows 11 Home - 64 bit"
+    },
+    {
+      "id": "8",
+      "os": "Windows 11 Pro - 64 bit"
+    }
+  ],
+  "laptops": [
+    {
+      "id": "1",
+      "idSeries": "4",
+      "idOS": "1",
+      "laptopName": "Laptop Dell Latitude 5400",
+      "account": "1"
+    },
+    {
+      "id": "2",
+      "idSeries": "6",
+      "idOS": "7",
+      "laptopName": "Laptop Dell Alienware m18 Gaming",
+      "account": "1"
+    },
+    {
+      "id": "3",
+      "idSeries": "16",
+      "idOS": "8",
+      "laptopName": "Laptop Lenovo ThinkBook 14 Gen 4",
+      "account": "3"
+    },
+    {
+      "id": "4",
+      "idSeries": "18",
+      "idOS": "8",
+      "laptopName": "Laptop Lenovo Yoga Slim 7",
+      "account": "3"
+    },
+    {
+      "id": "5",
+      "idSeries": "31",
+      "idOS": "8",
+      "laptopName": "Laptop Nitro 5",
+      "account": "1"
+    },
+    {
+      "id": "6",
+      "idSeries": "31",
+      "idOS": "7",
+      "laptopName": "Nitro 5",
+      "account": "1"
+    }
+  ],
+  "variants": [
+    {
+      "id": "1",
+      "idLaptop": "1",
+      "describe": "Dell Latitude 5400 (Core i5-8365U, 16GB, HDD 256GB, VGA Intel UHD Graphics 620, 14.0 inch FHD)",
+      "cpu": "Core i5-8365U",
+      "ram": "16GB",
+      "disk": "HDD 256GB",
+      "card": "VGA Intel UHD Graphics 620",
+      "screen": "14.0 inch FHD",
+      "sale": "25",
+      "priceOld": "16600000",
+      "priceNew": "11700000",
+      "quantity": "100",
+      "images": [
+        "https://sm.pcmag.com/t/pcmag_uk/review/d/dell-latit/dell-latitude-3390_52yk.1920.png",
+        "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/latitude-notebooks/14-5400/media-gallery/laptop_latitude_14_5400_gallery_3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=645&qlt=100,1&resMode=sharp2&size=645,402&chrss=full",
+        "https://www.zap.md/sites/default/files/imagecache/product-large/dell-latitude-5400-2.png"
+      ],
+      "account": "1"
+    },
+    {
+      "id": "2",
+      "idLaptop": "2",
+      "describe": "Alienware m18 (Intel Core i9-13900HX, 32GB, SSD 1TB, NVIDIA GeForce RTX 4090, 18 inch QHD+)",
+      "cpu": "Core i9-13900HX",
+      "ram": "32GB",
+      "disk": "SSD 1TB",
+      "card": "NVIDIA GeForce RTX 4090",
+      "screen": "18 inch QHD+",
+      "sale": "20",
+      "priceOld": "18700000",
+      "priceNew": "14960000",
+      "quantity": "100",
+      "images": [
+        "https://cdn.store-assets.com/s/752630/i/57205857.png?width=1024",
+        "https://th.bing.com/th/id/OIP.EDcDGO3RIgPuEVJAeocnpAHaFj?rs=1&pid=ImgDetMain",
+        "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Alienware_m16_header.png"
+      ],
+      "account": "3"
+    },
+    {
+      "id": "3",
+      "idLaptop": "3",
+      "describe": "Lenovo ThinkBook 14 Gen 4 (Intel Core i5-1235U, 16GB, SSD 512GB, Intel UHD Graphics, 14 inch FHD)",
+      "cpu": "Core i5-1235U",
+      "ram": "16GB",
+      "disk": "SSD 512GB",
+      "card": "Intel UHD Graphics",
+      "screen": "14 inch FHD",
+      "sale": "15",
+      "priceOld": "10500000",
+      "priceNew": "8900000",
+      "quantity": "120",
+      "images": [
+        "https://th.bing.com/th/id/OIP.RQ0eo82mz_N8zJbgh4bOOAHaF8?rs=1&pid=ImgDetMain",
+        "https://www.lenovo.com/medias/lenovo-laptops-thinkbook-14-gen-4-plus-14-intel-hero.png?context=bWFzdGVyfHJvb3R8MzEyMzkzfGltYWdlL3BuZ3xoYjgvaDIzLzEzMjU1MTA3NzcyNDQ2LnBuZ3w3MjljOTZmMmJjY2JmNWRiNzMwN2FhOWM2MDFlMDU1Y2JlYTVkYjE3MjdjMjA2ZDNkZjIwYmJiODNmYzk5Njdi",
+        "https://www.lenovo.com/medias/ThinkBook-14.png?context=bWFzdGVyfHJvb3R8NjYzNzh8aW1hZ2UvcG5nfGhiZC9oZTIvMTExMzk4OTIyNDg2MDYucG5nfDkxNGE5Y2VhZDc2MDUyOWIxODA0NDdlMDEwMGVlYTI3ZGFkYjQ5NzE5OWZhOTFhMWJmMTJmOTRiZWY3NTA0ZTk"
+      ],
+      "account": "3"
+    },
+    {
+      "id": "4",
+      "idLaptop": "3",
+      "cpu": "Core I7-1235H",
+      "ram": "16GB",
+      "disk": "SSD 256GB",
+      "card": "VGA Intel UHD Graphics 620",
+      "screen": "14 inch FHD",
+      "describe": "Laptop Lenovo ThinkBook 14 Gen 4 (Core I7-1235H, 16GB, SSD 256GB, VGA Intel UHD Graphics 620, 14 inch FHD)",
+      "sale": "16",
+      "priceOld": "16600000",
+      "priceNew": "11728630",
+      "quantity": "19",
+      "images": [
+        "https://th.bing.com/th/id/R.b0dd389bc010f9b524c10f4e977bc282?rik=2bXFXchqkwhysA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2flaptop-png-laptop-notebook-png-image-image-6746-1153.png&ehk=6byFAarnH09NpQkcILADyXHoQI1AG%2bVFwkFkGcmpSnQ%3d&risl=&pid=ImgRaw&r=0",
+        "https://th.bing.com/th/id/R.b0dd389bc010f9b524c10f4e977bc282?rik=2bXFXchqkwhysA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2flaptop-png-laptop-notebook-png-image-image-6746-1153.png&ehk=6byFAarnH09NpQkcILADyXHoQI1AG%2bVFwkFkGcmpSnQ%3d&risl=&pid=ImgRaw&r=0",
+        "https://th.bing.com/th/id/R.b0dd389bc010f9b524c10f4e977bc282?rik=2bXFXchqkwhysA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2flaptop-png-laptop-notebook-png-image-image-6746-1153.png&ehk=6byFAarnH09NpQkcILADyXHoQI1AG%2bVFwkFkGcmpSnQ%3d&risl=&pid=ImgRaw&r=0"
+      ],
+      "account": "1"
+    },
+    {
+      "id": "5",
+      "idLaptop": "4",
+      "cpu": "Core I7-1235H",
+      "ram": "16GB",
+      "disk": "SSD 256GB",
+      "card": "VGA Intel UHD Graphics 620",
+      "screen": "14 inch FHD",
+      "describe": "Laptop Lenovo Yoga Slim 7 (Core I7-1235H, 16GB, SSD 256GB, VGA Intel UHD Graphics 620, 14 inch FHD)",
+      "sale": "16",
+      "priceOld": "16600000",
+      "priceNew": "11728630",
+      "quantity": "19",
+      "images": [
+        "https://th.bing.com/th/id/R.4b632e475be2c9fa53dfdb490aa020f1?rik=bAdYcQodzgajNQ&pid=ImgRaw&r=0",
+        "https://th.bing.com/th/id/R.4b632e475be2c9fa53dfdb490aa020f1?rik=bAdYcQodzgajNQ&pid=ImgRaw&r=0",
+        "https://th.bing.com/th/id/R.4b632e475be2c9fa53dfdb490aa020f1?rik=bAdYcQodzgajNQ&pid=ImgRaw&r=0"
+      ],
+      "account": "1"
+    },
+    {
+      "id": "6",
+      "idLaptop": "5",
+      "cpu": "Core I7-1235H",
+      "ram": "16GB",
+      "disk": "SSD 256GB",
+      "card": "VGA Intel UHD Graphics 620",
+      "screen": "14.0 inch FHD",
+      "describe": "Laptop Nitro 5 (Core I7-1235H, 16GB, SSD 256GB, VGA Intel UHD Graphics 620, 14.0 inch FHD)",
+      "sale": "20",
+      "priceOld": "19000000",
+      "priceNew": "17000000",
+      "quantity": "100",
+      "images": [
+        "https://th.bing.com/th/id/OIP.rOXQJOBPLOCNeKJz7lwv9QHaGs?rs=1&pid=ImgDetMain",
+        "https://th.bing.com/th/id/OIP.rOXQJOBPLOCNeKJz7lwv9QHaGs?rs=1&pid=ImgDetMain",
+        "https://th.bing.com/th/id/OIP.rOXQJOBPLOCNeKJz7lwv9QHaGs?rs=1&pid=ImgDetMain"
+      ],
+      "account": "1"
+    },
+    {
+      "id": "7",
+      "idLaptop": "6",
+      "cpu": "Core I7-1235H",
+      "ram": "32GB",
+      "disk": "SSD 256GB",
+      "card": "VGA Intel UHD Graphics 620",
+      "screen": "14.0 inch FHD",
+      "describe": "Nitro 5 (Core I7-1235H, 16GB, SSD 256GB, VGA Intel UHD Graphics 620, 14.0 inch FHD)",
+      "sale": "20",
+      "priceOld": "19000000",
+      "priceNew": "17000000",
+      "quantity": "100",
+      "images": [
+        "https://th.bing.com/th/id/OIP.rOXQJOBPLOCNeKJz7lwv9QHaGs?rs=1&pid=ImgDetMain",
+        "https://th.bing.com/th/id/R.007838e69b8b541218e7b5563f663179?rik=wqnLAjHp2MB19w&pid=ImgRaw&r=0",
+        "https://th.bing.com/th/id/R.007838e69b8b541218e7b5563f663179?rik=wqnLAjHp2MB19w&pid=ImgRaw&r=0"
+      ],
+      "account": "1"
+    }
+  ],
+  "cart": [
+    {
+      "id": "7",
+      "account": "5",
+      "idVariant": "3",
+      "quantity": "1"
+    },
+    {
+      "id": "8",
+      "account": "5",
+      "idVariant": "1",
+      "quantity": "1"
+    },
+    {
+      "id": "10",
+      "account": "4",
+      "idVariant": "2",
+      "quantity": "1"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "account": "2",
+      "idVariant": "5",
+      "quantity": "1",
+      "status": "Đã xác nhận"
+    },
+    {
+      "id": "2",
+      "account": "5",
+      "idVariant": "5",
+      "quantity": "1",
+      "status": "Đã xác nhận"
+    },
+    {
+      "id": "3",
+      "account": "2",
+      "idVariant": "1",
+      "quantity": "1",
+      "status": "Đã xác nhận"
+    },
+    {
+      "id": "4",
+      "account": "2",
+      "idVariant": "5",
+      "quantity": "2",
+      "status": "Đã hủy"
+    },
+    {
+      "id": "5",
+      "account": "2",
+      "idVariant": "3",
+      "quantity": "2",
+      "status": "Chờ xác nhận"
+    },
+    {
+      "id": "6",
+      "account": "4",
+      "idVariant": "2",
+      "quantity": "1",
+      "status": "Chờ xác nhận"
+    },
+    {
+      "id": "7",
+      "account": "4",
+      "idVariant": "5",
+      "quantity": "2",
+      "status": "Đã xác nhận"
+    },
+    {
+      "id": "8",
+      "account": "2",
+      "idVariant": "2",
+      "quantity": "1",
+      "status": "Chờ xác nhận"
+    },
+    {
+      "id": "9",
+      "account": "2",
+      "idVariant": "7",
+      "quantity": "2",
+      "status": "Chờ xác nhận"
+    }
+  ]
+}

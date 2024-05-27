@@ -1,0 +1,21 @@
+.card-body>.row>.col-12>.card>a>img{
+    height: 150px;
+    width:  auto;
+}
+
+.row>.col-8>.card>.card-body>.row>.col-12>.card>.row>.col-8>a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.row>.col-8>.card>.card-body>.row>.col-12>.card>.row>.col-8>a:hover{
+    color: #cb2f14;
+}
+
+.col-8>.card>.card-body>.row>.col-12>.card{
+    border: none;
+}
+
+.col-8>.card>.card-body>.row>.col-12>.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}

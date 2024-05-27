@@ -1,0 +1,187 @@
+<div class="row mt-3">
+    <div class="col-12">
+        <form class="card border-danger p-3 needs-validation" novalidate>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h2 class="text-danger">
+                            Variant Manager
+                        </h2>
+                    </div>
+                    <div class="row">
+
+                        <div class="form-group">
+                            <label for="name" class="mt-3"><strong>Tên Laptop: </strong></label>
+                            <input class="form-control mt-2" type="text" id="name"
+                                ng-model="laptop.laptopName" required disabled>
+                        </div>
+
+                        <div class="col-6">
+
+                            <div class="form-group">
+                                <label for="priceOld" class="mt-3"><strong>Giá gốc: </strong></label>
+                                <input ng-change="changePriceOld()" class="form-control mt-2" type="text" id="priceOld" 
+                                ng-model="variant.priceOld" required>
+                                <div ng-show="validVariant.priceOld" class="text-danger">
+                                    Vui lòng nhập giá gốc
+                                </div>
+                                <div ng-show="validVariant.validPriceOld" class="text-danger">
+                                    Giá gốc là số!
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="priceNew" class="mt-3"><strong>Giá bán: </strong></label>
+                                <input ng-change="changePriceNew()" class="form-control mt-2" type="text" id="priceNew" 
+                                ng-model="variant.priceNew" required>
+                                <div ng-show="validVariant.priceNew" class="text-danger">
+                                    Vui lòng nhập giá bán
+                                </div>
+                                <div ng-show="validVariant.validPriceNew" class="text-danger">
+                                    Giá bán là số!
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sale" class="mt-3"><strong>Sale: </strong></label>
+                                <input ng-change="changeSale()" class="form-control mt-2" type="text" id="sale" 
+                                ng-model="variant.sale" required>
+                                <div ng-show="validVariant.sale" class="text-danger">
+                                    Vui lòng nhập sale
+                                </div>
+                                <div ng-show="validVariant.validSale" class="text-danger">
+                                    Sale là số!
+                                </div>
+                                <div ng-show="validVariant.saleMax" class="text-danger">
+                                    Sale phải nhỏ hơn 100!
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="quantity" class="mt-3"><strong>Số lượng: </strong></label>
+                                <input ng-change="changeQuantity()" class="form-control mt-2" type="text" id="quantity" 
+                                ng-model="variant.quantity" required>
+                                <div ng-show="validVariant.quantity" class="text-danger">
+                                    Vui lòng nhập số lượng
+                                </div>
+                                <div ng-show="validVariant.validQuantity" class="text-danger">
+                                    Số lượng là số!
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="" class="mt-3"><strong>Ảnh: </strong></label>
+                                <div ng-repeat="img in variant.images track by $index">
+                                    <div class="input-group mt-2">
+                                        <input class="form-control" type="text" id=""
+                                        ng-model="variant.images[$index]" placeholder="Nhập link ảnh"
+                                        ng-change="changeImage()">
+                                        <button class="btn btn-outline-danger" type="button" ng-click="removeInput($index)">Remove</button>
+                                    </div>
+                                    <div ng-show="validVariant.images[$index]" class="text-danger">
+                                        Vui lòng nhập link ảnh
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-success mt-2" type="button" ng-click="addInput()">New image</button>
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="cpu" class="mt-3"><strong>CPU: </strong></label>
+                                <input ng-change="changeCPU()" class="form-control mt-2" type="text" id="cpu" 
+                                ng-model="variant.cpu" required>
+                                <div ng-show="validVariant.cpu" class="text-danger">
+                                    Vui lòng nhập cpu
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ram" class="mt-3"><strong>RAM: </strong></label>
+                                <input ng-change="changeRAM()" class="form-control mt-2" type="text" id="ram" 
+                                ng-model="variant.ram" required>
+                                <div ng-show="validVariant.ram" class="text-danger">
+                                    Vui lòng nhập ram
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="disk" class="mt-3"><strong>DISK: </strong></label>
+                                <input ng-change="changeDisk()" class="form-control mt-2" type="text" id="disk" 
+                                ng-model="variant.disk" required>
+                                <div ng-show="validVariant.disk" class="text-danger">
+                                    Vui lòng nhập disk
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="card" class="mt-3"><strong>CARD: </strong></label>
+                                <input ng-change="changeCard()" class="form-control mt-2" type="text" id="card" 
+                                ng-model="variant.card" required>
+                                <div ng-show="validVariant.card" class="text-danger">
+                                    Vui lòng nhập card
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="screen" class="mt-3"><strong>Screen: </strong></label>
+                                <input ng-change="changeScreen()" class="form-control mt-2" type="text" id="screen" 
+                                ng-model="variant.screen" required>
+                                <div ng-show="validVariant.screen" class="text-danger">
+                                    Vui lòng nhập screen
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-5">
+                                <div class="form-group mt-5">
+                                    <button class="btn btn-outline-success" ng-click="addVariant()">Add Variant</button>
+                                    <button class="btn btn-outline-warning" ng-click="updateVariant()">Update Variant</button>
+                                    <button class="btn btn-outline-danger" ng-click="deleteVariant()">Delete Variant</button>
+                                    <button class="btn btn-outline-primary" ng-click="newVariant()">New Variant</button>
+                                    <button class="btn btn-outline-info" ng-click="newVariant()">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-12 mt-3">
+        <div class="card border-primary p-2">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="text-center">Tên Laptop</th>
+                        <th class="text-center">Giá bán</th>
+                        <th class="text-center">Số lượng</th>
+                        <th class="text-center">CPU</th>
+                        <th class="text-center">RAM</th>
+                        <th class="text-center">Disk</th>
+                        <th class="text-center">Card</th>
+                        <th class="text-center">Screen</th>
+                        <th class="text-center">Người tạo</th>
+                        <th class="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="variant in listVariant">
+                        <td class="text-center">{{ laptop.laptopName }}</td>
+                        <td class="text-center">{{ variant.priceNew | number }} VNĐ</td>
+                        <td class="text-center">{{ variant.quantity }}</td>
+                        <td class="text-center">{{ variant.cpu }}</td>
+                        <td class="text-center">{{ variant.ram }}</td>
+                        <td class="text-center">{{ variant.disk }}</td>
+                        <td class="text-center">{{ variant.card }}</td>
+                        <td class="text-center">{{ variant.screen }}</td>
+                        <td class="text-center">{{ variant.accountObject.name }}</td>
+                        <td class="text-center">
+                            <a href="#!/variantManager/{{variant.idLaptop}}/{{variant.id}}" class="btn btn-outline-warning">Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

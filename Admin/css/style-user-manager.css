@@ -1,0 +1,13 @@
+table {
+    width: 100%;
+    /* Đặt độ rộng của bảng là 100% */
+    table-layout: auto;
+    /* Cho phép trình duyệt tự động căn chỉnh độ rộng của cột */
+}
+
+td {
+    word-wrap: break-word;
+    /* Xuống dòng nếu một từ quá dài */
+    max-width: 150px;
+    /* Đặt độ rộng tối đa cho mỗi ô */
+}

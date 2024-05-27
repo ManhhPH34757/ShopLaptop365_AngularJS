@@ -1,0 +1,33 @@
+<div class="menu" ng-controller="orderControl">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#!"><i class="fa-solid fa-laptop-code"></i> Laptop365</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link active" aria-current="page" href="#!"><i class="fa-solid fa-house"></i> Trang chủ</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#!listProduct"><i class="fa-solid fa-list-ul"></i> Danh sách sản phẩm</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav float-end mb-2 mb-lg-0">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" aria-current="page" href="#" ><i class="fa-regular fa-user"></i> Thông tin cá nhân</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" aria-current="page" href="#!order/{{account.id}}" ><i class="fa-regular fa-user"></i> Đơn hàng</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" aria-current="page" href="http://127.0.0.1:5501/Assignment2/Login/login.html" ><i class="fa-solid fa-right-from-bracket"></i> Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

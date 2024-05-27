@@ -1,0 +1,68 @@
+<div class="row mt-3">
+    <div class="col-12">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#!order/{{account.id}}">Đơn hàng chờ xác nhận</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#!order/orderSuccess/{{account.id}}">Đơn hàng đã xác nhận</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#!order/orderCancel/{{account.id}}">Đơn hàng đã hủy</a>
+            </li>
+        </ul>
+        
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <h3>Đơn hàng chờ xác nhận</h3>
+                <div class="row mt-3">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <div class="card border-light">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div ng-repeat="product in listProducts | filter: {
+                                        status : 'Chờ xác nhận',
+                                    }" class="col-12">
+                                        <div class="card p-3">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <a href="" class="col-3"><img
+                                                        src="{{product.images[0]}}" class="card-img-top" alt="..."></a>
+                                                </div>
+                                                <div class="col-8">
+                                                    <a href="">
+                                                        <h5 class="card-title">{{product.laptopObject.laptopName}}</h5>
+                                                        <p class="card-text text-start">
+                                                            <span class="badge bg-danger">[New 100%]</span>
+                                                            {{product.describe}}
+                                                        </p>
+                                                    </a>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="row mt-3">     
+                                                                <p class="col-3">Số lượng: {{product.quantity}}</p>      
+                                                                
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <a href=""
+                                                                    class="btn btn-outline-warning"><i class="fa-solid fa-bag-shopping"></i>
+                                                                    {{product.priceNew * product.quantity | number}} đ</a>
+                                                                    <a href="#!order/orderCancel/{{account.id}}" class="btn btn-outline-danger" ng-click="cancelOrder(product)">Hủy đơn hàng</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

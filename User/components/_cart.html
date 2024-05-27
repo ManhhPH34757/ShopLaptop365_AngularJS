@@ -1,0 +1,67 @@
+<div class="row mt-3">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <div class="card border-light">
+            <div class="card-body">
+                <div class="row">
+                    <div ng-repeat="product in listProducts" class="col-12">
+                        <div class="card p-3">
+                            <div class="row">
+                                <div class="col-4">
+                                    <a href="" class="col-3"><img
+                                        src="{{product.images[0]}}" class="card-img-top" alt="..."></a>
+                                </div>
+                                <div class="col-8">
+                                    <a href="">
+                                        <h5 class="card-title">{{product.laptopObject.laptopName}}</h5>
+                                        <p class="card-text text-start">
+                                            <span class="badge bg-danger">[New 100%]</span>
+                                            {{product.describe}}
+                                        </p>
+                                    </a>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row mt-3">     
+                                                <p class="col-3">Số lượng: </p>      
+                                                <div class="col-3">
+                                                    <div class="input-group">
+                                                        <button class="btn btn-outline-secondary" type="button" ng-click="giam(product)">-</button>
+                                                        <input type="text" class="form-control" placeholder="" aria-label="" value="{{product.quantity}}">
+                                                        <button class="btn btn-outline-secondary" type="button" ng-click="tang(product)">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <a href=""
+                                                    class="btn btn-outline-warning"><i class="fa-solid fa-bag-shopping"></i>
+                                                    {{product.priceNew * product.quantity | number}} đ</a>
+                                                <button class="btn btn-outline-danger" ng-click="deleteProductInCart(product)">Xóa khỏi giỏ hàng</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-2"></div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-2">
+
+    </div>
+    <div class="col-8">
+        <div class="text-end text-primary">
+            <strong>Tổng tiền: {{priceTotal | number}} đ</strong>
+        </div>
+        <div class="text-end">
+            <a href="#!order/{{account.id}}" class="btn btn-outline-success" ng-click="buyAllNow()">
+                <strong>Đặt hàng</strong>
+            </a>
+        </div>
+    </div>
+</div>

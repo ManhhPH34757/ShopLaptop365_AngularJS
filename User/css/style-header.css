@@ -1,0 +1,17 @@
+#header{
+    background-color: rgb(16, 87, 93);
+}
+
+.header>.col-2>.text-center>h5{
+    color: rgb(0, 255, 221) !important;
+}
+
+.header>.col-2>.text-center>a{
+    color: white !important;
+    font-weight: bolder;
+}
+
+.header>.col-1>.cart>a{
+    color: #fff;
+    font-weight: bolder;
+}

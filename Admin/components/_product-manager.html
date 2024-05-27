@@ -1,0 +1,97 @@
+<div class="row mt-3">
+    <div class="col-12">
+        <form class="card border-danger p-3 needs-validation" novalidate>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h2 class="text-danger">
+                            Laptop Manager
+                        </h2>
+                    </div>
+                    <div class="form-group">
+                        <label for="brand" class="mt-3"><strong>Hãng Laptop</strong></label>
+                        <select title="brand" name="" id="" class="form-control mt-2" ng-model="series.idBrand"
+                            ng-change="selectBrandAndChange()">
+                            <option value="" hidden>--Select Brand</option>
+                            <option ng-repeat="brand in listBrand" value="{{brand.id}}">{{brand.brandName}}</option>
+                        </select>
+                        <div ng-show="validLaptop.brand" class="text-danger">
+                            Vui lòng chọn Hãng
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="series" class="mt-3"><strong>Dòng Laptop</strong></label>
+                        <select title="series" name="" id="" class="form-control mt-2" ng-model="laptop.idSeries"
+                        ng-change="changeSeries()">
+                            <option value="" hidden>--Select Series</option>
+                            <option ng-repeat="series in listSeries" value="{{series.id}}">{{series.seriesName}}
+                            </option>
+                        </select>
+                        <div ng-show="validLaptop.series" class="text-danger">
+                            Vui lòng chọn dòng Laptop
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="OS" class="mt-3"><strong>Hệ điều hành</strong></label>
+                        <select title="OS" name="" id="" class="form-control mt-2" ng-model="laptop.idOS"
+                        ng-change="changeOS()">
+                            <option value="" hidden>--Select Operating System</option>
+                            <option ng-repeat="OS in listOS" value="{{OS.id}}">{{OS.os}}</option>
+                        </select>
+                        <div ng-show="validLaptop.OS" class="text-danger">
+                            Vui lòng chọn hệ điều hành
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="mt-3"><strong>Tên Laptop: </strong></label>
+                        <input ng-change="changeLaptopName()" class="form-control mt-2" type="text" id="name"
+                            ng-model="laptop.laptopName" required>
+                        <div ng-show="validLaptop.name" class="text-danger">
+                            Vui lòng nhập tên Laptop
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <div class="form-group mt-5">
+                            <button class="btn btn-outline-success" ng-click="addlaptop()">Add Laptop</button>
+                            <button class="btn btn-outline-warning" ng-click="updatelaptop()">Update Laptop</button>
+                            <button class="btn btn-outline-danger" ng-click="deletelaptop()">Delete Laptop</button>
+                            <button class="btn btn-outline-primary" ng-click="newlaptop()">New Laptop</button>
+                            <button class="btn btn-outline-info" ng-click="newlaptop()">Cancel</button>
+                            <button class="btn btn-outline-success" ng-click="addVariant()">Add Variant</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="col-12 mt-3">
+        <div class="card border-primary p-2">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="text-center">Tên Laptop</th>
+                        <th class="text-center">Hãng</th>
+                        <th class="text-center">Dòng laptop</th>
+                        <th class="text-center">Hệ điều hành</th>
+                        <th class="text-center">Người tạo</th>
+                        <th class="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="laptop in listProduct">
+                        <td class="text-center">{{ laptop.laptopName }}</td>
+                        <td class="text-center">{{ laptop.seriesObject.brandObject.brandName }}</td>
+                        <td class="text-center">{{ laptop.seriesObject.seriesName }}</td>
+                        <td class="text-center">{{ laptop.osObject.os }}</td>
+                        <td class="text-center">{{ laptop.accountObject.name }}</td>
+                        <td class="text-center">
+                            <a href="#!/productManager/{{laptop.id}}" class="btn btn-outline-warning">Edit</a>
+                        </td>
+                    </tr>                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

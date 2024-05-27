@@ -1,0 +1,46 @@
+<div ng-include="'/Assignment2/User/layout/_banner.html'"></div>
+<div class="row">
+    <div class="col-12 mt-3">
+        <div class="card border-danger">
+            <div class="card-header bg-danger">
+                <div class="float-start">
+                    <h4 class="text-light">Deal Hot <i class="fa-solid fa-fire-flame-curved"></i></h4>
+                </div>
+                <div class="float-end">
+                    <h4 id="countdown" class="text-light"></h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div ng-repeat="product in listProduct" class="col-4">
+                        <div class="card p-3">
+                            <div class="float-end">
+                                <span class="badge bg-danger">- {{product.sale}} %</span>
+                            </div>
+                            <a href="#!productDetails/{{product.id}}"><img
+                                    src="{{product.images[0]}}" class="card-img-top" alt="..."></a>
+                            <div class="card-body text-center">
+                                <a href="#!productDetails/{{product.id}}">
+                                    <h5 class="card-title">{{product.laptopObject.laptopName}}</h5>
+                                    <p class="card-text text-start">
+                                        <span class="badge bg-danger">[New 100%]</span>
+                                        {{product.describe}}
+                                    </p>
+                                </a>
+                                <img class="float-start" src="/Assignment2/User/images/sticker.png" alt="">
+                            </div>
+                            <div class="card-footer pb-0 bg-white">
+                                <div class="text-center mb-2">
+                                    <a href="#!productDetails/{{product.id}}"
+                                        class="btn btn-outline-warning"><i class="fa-solid fa-bag-shopping"></i>
+                                        {{product.priceNew | number}} đ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

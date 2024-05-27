@@ -1,0 +1,148 @@
+<div>
+    <div class="row mt-3">
+        <div class="col-9">
+            <h5>{{selectedProduct.laptopObject.laptopName}}</h5>
+            
+        </div>
+    </div>
+
+    <div class="row p-3">
+        <div class="col-4 card p-3">
+            <div id="displayBox" class="card p-3">
+                <img src="{{selectedProduct.images[0]}}" alt="...">
+            </div>
+            <div class="row">
+                <div class="col-4 mt-3" ng-repeat="img in selectedProduct.images track by $index">
+                    <div class="card p-3"><img src="{{selectedProduct.images[$index]}}" alt=""
+                            onclick="displayImage(this)"></div>
+                </div>
+            </div>
+            <div class="mt-3">
+                <div class="card border-warning">
+                    <div class="card-header bg-warning">
+                        <strong>Thông tin khuyến mại</strong>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="#" class="nav-link text-primary"> Balo laptop chống sốc / hoặc / Túi xách Laptop88 trị giá 199.000đ</a></li>
+                            <li><a href="#" class="nav-link"> CHUỘT KHÔNG DÂY S88 Office Pro 1 | S88 Office V3 | Deino</a></li>
+                            <li><a href="#" class="nav-link text-primary"> Thẻ Gold Member - ƯU ĐÃI GIÁ TRỊ trị giá 1.290.000 đ</a></li>
+                            <li><a href="#" class="nav-link"> (*) TẶNG BÀN DI CHUỘT GAMING XXL KHỔ LỚN 80 X 30 cm</a></li>
+                            <li><a href="#" class="nav-link text-primary"> Miễn phí dán Skin mặt lưng Laptop - sử dụng tại các cơ sở Skin88 trị giá 180.000đ</a></li>
+                            <li><a href="#" class="nav-link"> Hệ điều hành Windows Bản Quyền theo máy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="card p-3">
+                <h4 class="text-danger">
+                    {{selectedProduct.priceNew | number}} VNĐ
+                </h4>
+                <div class="float-end">
+                    <strong>Giá gốc: </strong>
+                    <span class="price">{{selectedProduct.priceOld | number}} VNĐ</span>
+                    <span class="badge bg-danger"> - {{selectedProduct.sale}} %</span>
+                </div>
+                <div class="Configuration">
+                    **Cấu hình
+                </div>
+                <div>
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <strong class="float-end">CPU :</strong>
+                        </div>
+                        <div class="col-8">
+                            <span class="badge bg-info">{{selectedProduct.cpu}}</span>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <strong class="float-end">RAM :</strong>
+                        </div>
+                        <div class="col-8">
+                            <span class="badge bg-info">{{selectedProduct.ram}}</span>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <strong class="float-end">Ổ cứng :</strong>
+                        </div>
+                        <div class="col-8">
+                            <span class="badge bg-info">{{selectedProduct.disk}}</span>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <strong class="float-end">Màn hình :</strong>
+                        </div>
+                        <div class="col-8">
+                            <span class="badge bg-info">{{selectedProduct.screen}}</span>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <strong class="float-end">Card đồ họa :</strong>
+                        </div>
+                        <div class="col-8">
+                            <span class="badge bg-info">{{selectedProduct.card}}</span>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="p-1 col-12">
+                            <button type="button" class="col-12 btn btn-outline-primary float-right mt-3"><i class="fa-solid fa-comments"></i> Chat với nhân viên tư vấn</button>
+                        </div>
+                    </div>
+                    <div class="row mt-0">
+                        <div class="p-1 col-6">
+                            <a class="btn col-12 btn btn-outline-primary float-right" ng-click="addToCart()"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                        </div>
+                        <div class="p-1 col-6">
+                            <button type="button" class="col-12 btn btn-outline-primary float-right" ng-click="buyNow()"><i class="fa-solid fa-bag-shopping"></i> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card border-warning">
+                <div class="card-header text-center fw-bold fs-5 bg-white">
+                    <h5><strong>Thông tin bảo hành</strong></h5>
+                </div>
+                <div class="card-body">
+                    <p><i class="fa-solid fa-check"></i><span> Bảo hành 12 tháng Laptop88</span></p>
+                    <p><i class="fa-solid fa-check"></i><span> MIỄN PHÍ GIAO HÀNG TẬN NHÀ</span></p>
+                    <p>- Với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng Laptop88 gần nhất</p>
+                    <p>- Với đơn hàng > 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+                </div>
+            </div>
+
+            <div class="card border-warning mt-4">
+                <div class="card-header text-center fw-bold fs-5 bg-white">
+                    <h5><strong>Yên tâm mua hàng</strong></h5>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Hệ thống cửa hàng toàn quốc</li>
+                        <li>Đại lý phân phối chính hãng</li>
+                        <li>Giá luôn tốt nhất</li>
+                        <li>Hỗ trợ trả góp lãi suất thấp</li>
+                        <li>Bảo hành dài, hậu mãi chu đáo</li>
+                        <li>Miễn phí giao hàng toàn quốc</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <img src="https://laptop88.vn/template/giaodien_2022/images/banner-right-detail.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div id="ft-1" class="col-4 card"><img src="https://laptop88.vn/media/banner/02_Jan041ed245eb758c762ce49f06fc77330d.png" alt=""></div>
+        <div id="ft-2" class="col-4 card"><img src="https://laptop88.vn/media/banner/08_Febde78649a3de2f1ff7425b8034e7d03eb.png" alt=""></div>
+        <div id="ft-3" class="col-4 card"><img src="https://laptop88.vn/media/banner/30_Sep8255f3d0572381493d9c132053d098b1.png" alt=""></div>
+    </div>
+</div>

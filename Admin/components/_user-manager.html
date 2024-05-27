@@ -1,0 +1,166 @@
+<div class="row mt-3">
+    <div class="col-12">
+        <form class="card border-danger p-3 needs-validation" novalidate>
+            <div class="row">
+                <div class="text-center">
+                    <h4>User Manager</h4>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="name" class=""><strong>Họ và tên: </strong></label>
+                        <input class="form-control mt-2" type="text" id="name" ng-model="user.name" ng-change="changeName()" required>
+                        <div ng-show="checkValid.name" class="text-danger">
+                            Vui lòng nhập tên user
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="age"><strong>Tuổi: </strong></label>
+                        <input class="form-control mt-2" type="text" id="age" ng-model="user.age" ng-change="changeAge()" required>
+                        <div ng-show="checkValid.age" class="text-danger">
+                            Vui lòng nhập tuổi
+                        </div>
+                        <div ng-show="checkValid.validAge" class="text-danger">
+                            Tuổi là số nguyên dương!
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="address"><strong>Địa chỉ: </strong></label>
+                        <input class="form-control mt-2" type="text" id="address" ng-model="user.address" ng-change="changeAddress()" required>
+                        <div ng-show="checkValid.address" class="text-danger">
+                            Vui lòng nhập address
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mt-2">
+                            <div class="form-group mt-3">
+                        <label for="gender"><strong>Giới tính: </strong></label>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="radio" name="gender" value="Male" id="male"
+                                ng-model="user.gender" ng-change="changeGender()">
+                            <label class="form-check-label" for="male">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check mt-2">
+                            <input class="form-check-input" type="radio" name="gender" value="Female" id="female"
+                                ng-model="user.gender" ng-change="changeGender()">
+                            <label class="form-check-label" for="female">
+                                Female
+                            </label>
+                        </div>
+                        <div ng-show="checkValid.gender" class="text-danger">
+                            Vui lòng chọn giới tính
+                        </div>
+                    </div>
+                        </div>
+                        <div class="col-6 mt-2">
+                            <div class="form-group mt-3">
+                        <label for="role"><strong>Vai trò: </strong></label>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input role" type="radio" name="role" value="1" id="admin"
+                                ng-model="account.role" ng-change="changeRole()">
+                            <label class="form-check-label" for="admin">
+                                Admin
+                            </label>
+                        </div>
+                        <div class="form-check mt-2">
+                            <input class="form-check-input role" type="radio" name="role" value="2" id="user"
+                                ng-model="account.role" ng-change="changeRole()">
+                            <label class="form-check-label" for="user">
+                                User
+                            </label>
+                        </div>
+                        <div ng-show="checkValid.role" class="text-danger">
+                            Vui lòng chọn quyền
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="phonenumber"><strong>Số điện thoại: </strong></label>
+                        <input class="form-control mt-2" type="text" id="phonenumber" ng-model="user.phoneNumber" ng-change="changeSDT()" required>
+                        <div ng-show="checkValid.phoneNumber" class="text-danger">
+                            Vui lòng nhập số điện thoại
+                        </div>
+                        <div ng-show="checkValid.validPhoneNumber" class="text-danger">
+                            Số điện thoại không hợp lệ
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="email" class=""><strong>Email: </strong></label>
+                        <input class="form-control mt-2" type="email" id="email" ng-model="user.email" ng-change="changeEmail()" required>
+                        <div ng-show="checkValid.email" class="text-danger">
+                            Vui lòng nhập email
+                        </div>
+                        <div ng-show="checkValid.validEmail" class="text-danger">
+                            Email không hợp lệ
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="username"><strong>Username: </strong></label>
+                        <input class="form-control mt-2" type="text" id="username" ng-model="account.username" ng-change="changeUserName()" required>
+                        <div ng-show="checkValid.username" class="text-danger">
+                            Vui lòng nhập username
+                        </div>
+                        <div ng-show="checkValid.validUsername" class="text-danger">
+                            Username từ 6-30 kí tự, bao gồm  kí tự in hoa, kí tự thường và số!
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="password"><strong>Password: </strong></label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="password" ng-model="account.password" ng-change="changePassword()">
+                        </div>
+                        <div ng-show="checkValid.password" class="text-danger">
+                            Vui lòng nhập password
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-outline-success" ng-click="addUser()">Add user</button>
+                            <button type="submit" class="btn btn-outline-warning" ng-click="updateUser()">Update user</button>
+                            <button class="btn btn-outline-danger" ng-click="deleteUser()">Delete user</button>
+                            <button class="btn btn-outline-primary" ng-click="newUser()">New user</button>
+                            <button class="btn btn-outline-info" ng-click="newUser()">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-12 mt-3">
+        <div class="card border-primary p-2">
+            <table id="tableUser" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Họ và tên</th>
+                        <th>Tuổi</th>
+                        <th>Giới tính</th>
+                        <th>Địa chỉ</th>
+                        <th>Số điện thoại</th>
+                        <th>Email</th>
+                        <th>Vai trò</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="user in listUser | filter:searchText track by $index">
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.age }}</td>
+                        <td>{{ user.gender }}</td>
+                        <td>{{ user.address }}</td>
+                        <td>{{ user.phoneNumber }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.account.role.roleName }}</td>
+                        <td>
+                            <a href="#!/userManager/{{user.id}}" class="btn btn-outline-warning">Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
